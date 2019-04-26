@@ -1,7 +1,15 @@
 
 
+h1{
+    text-align: center;
+    color: slateblue;
+}
+
 .starwars-card{
 border: 1px solid black;
-margin: 30%;
+margin: 5% 30%;
+padding: 5%;
+color: slateblue;
+background-color: antiquewhite;
 
 }
