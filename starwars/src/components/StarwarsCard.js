@@ -7,7 +7,8 @@ function StarwarsChars(props) {
     <div className="starwars-card">
         <h3>{props.starwarsChar.name}</h3>
         <p>
-          <strong>Species:</strong> {props.starwarsChar.species}
+          <strong>Gender:</strong> {props.starwarsChar.gender}
+          
         </p>
       </div>
   );
