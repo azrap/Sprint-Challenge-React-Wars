@@ -1,18 +1,19 @@
 import React from 'react';
 
-function StarWarsChars(props) {
+
+
+function StarwarsChars(props) {
   return (
     <div className="starwars-card">
-        <h3>{props.starwarsChars.name}</h3>
+        <h3>{props.starwarsChar.name}</h3>
         <p>
-          <strong>Species:</strong> {props.starwarsChars.species}
+          <strong>Species:</strong> {props.starwarsChar.species}
         </p>
       </div>
-    </div>
   );
 }
 
-export default StarWarsCard;
+export default StarwarsChars;
 
 
 
@@ -32,3 +33,4 @@ species:
 starships:
 url:
 vehicles:
+*/

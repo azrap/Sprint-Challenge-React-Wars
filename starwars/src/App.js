@@ -1,27 +1,18 @@
 import React, { Component } from 'react';
 import './App.css';
-import StarWarsChars from './components/StarWarsCard';
+import StarwarsChars from './components/StarwarsCard';
 
 
-function StarWarsCard(props) {
-  return (
-    <div className="starwars-card">
-        <h3>{props.starwarsChars.name}</h3>
-        <p>
-          <strong>Species:</strong> {props.starwarsChars.species}
-        </p>
-      </div>
-  );
-}
 
+// current list of characters
 
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsCharsOnState: starwarsChars,
-      starwarsChar: []
+       starwarsChars: []
+    
     };
   }
 
@@ -45,8 +36,17 @@ class App extends Component {
       });
   };
 
+
   render() {
     return (
+      <div className="starwars-list">
+      <h1> May the force be with you </h1>
+          {
+            this.state.starwarsChars.map(ele => (
+            <StarwarsChars starwarsChar={ele} key={ele.name} />
+          ))       
+          }
+    </div>
       
     );
   }
@@ -57,8 +57,3 @@ export default App;
 
 
 
-<div className="class-list">
-          {this.state.studentsOnState.map(student => (
-            <StarWarsChars name={starwarsChars.name} key={starwarsChars.name} />
-          ))}
-        </div>
