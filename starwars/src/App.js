@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
 import './App.css';
+import StarwarsChars from './components/StarwarsCard';
+
+
+
+// current list of characters
+
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+       starwarsChars: []
+    
     };
   }
 
@@ -29,13 +36,24 @@ class App extends Component {
       });
   };
 
+
   render() {
     return (
-      <div className="App">
-        <h1 className="Header">React Wars</h1>
-      </div>
+      <div className="starwars-list">
+      <h1> May the force be with you </h1>
+          {
+            this.state.starwarsChars.map(ele => (
+            <StarwarsChars starwarsChar={ele} key={ele.name} />
+          ))       
+          }
+    </div>
+      
     );
   }
 }
 
 export default App;
+
+
+
+

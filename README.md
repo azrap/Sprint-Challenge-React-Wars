@@ -28,9 +28,15 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What does it mean to _think_ in react?
 
+  - It means to think and go about web development in terms of resuable components that have a heirarchy of nesting parent -> child -> grandchild.
+
 - [ ] Describe state.
+  - state is the current snapshot or view of the data in the app.
 
 - [ ] Describe props.
+
+- props contain the characteristics of the objects in the app. The "carry" the updated data about the objects to the state so that the state can be populated with the most up to date data"
+
 
 ## Project Set Up
 
